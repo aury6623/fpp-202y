@@ -63,7 +63,8 @@ from C and Fortran syntax in the following ways:
        'true'.
     10 .FALSE. is treated as the integer 0. .TRUE. is treated as the
        integer 1.
-    11. Undefined identifiers are treated as zero, as in CPP.
+    11. Any undefined identifiers that remain after macro expansion (including those 
+        lexically identical to keywords or intrinsics) are treated as zero, as in CPP.
     12. C character constants (such as 'A', '\n') are treated as
         integer values, as they are in C.
     13. The Fortran operators .AND., .OR., ,NOT., .EQ., .NE., .EQV., and
